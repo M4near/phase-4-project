@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Switch } from "react-router";
+// import ConcertHomePage from "./Components/ConcertHomePage";
+import Navbar from "./Components/Navbar";
+// import Comments from "./Components/Comments";
+// import Login from "./Components/Login";
+// import Signup from "./Components/Signup";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      {/* <Switch>
+      <Route exact path="/">
+          <Login />
+        </Route>
+        <Route exact path="/signup">
+          <Signup />
+        </Route>
+        <Route exact path="/concerts">
+          <ConcertHomePage />
+        </Route>
+        <Route exact path="/concerts/:id">
+          <Comments />
+        </Route>
+      </Switch>  */}
+    </>
   );
 }
 
