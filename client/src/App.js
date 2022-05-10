@@ -1,31 +1,52 @@
-import { Route, Switch } from "react-router";
+import React, { useEffect, useState } from "react";
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 // import ConcertHomePage from "./Components/ConcertHomePage";
 import Navbar from "./Components/Navbar";
 // import Comments from "./Components/Comments";
-// import Login from "./Components/Login";
-// import Signup from "./Components/Signup";
-
+import Login from "./Components/Login";
+import Signup from "./Components/Signup";
 
 function App() {
-  return (
-    <>
-      <Navbar />
-      {/* <Switch>
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    // auto-login
+    fetch("/me").then((r) => {
+      if (r.ok) {
+        r.json().then((user) => setUser(user));
+      }
+    });
+  }, []);
+
+  if (!user) 
+    return (
+      <Router>
+      <Navbar  />
+      <Switch>
       <Route exact path="/">
-          <Login />
+          <Login onLogin={setUser} />
+          <Signup onLogin={setUser} />
         </Route>
-        <Route exact path="/signup">
-          <Signup />
+      </Switch> 
+    </Router>
+  ); else {
+
+  return (
+    <Router>
+      <Navbar user={user} setUser={setUser} />
+      <Switch>
+      <Route exact path="/">
+          <Login onLogin={setUser} />
         </Route>
-        <Route exact path="/concerts">
+         {/* <Route exact path="/concerts">
           <ConcertHomePage />
         </Route>
         <Route exact path="/concerts/:id">
           <Comments />
-        </Route>
-      </Switch>  */}
-    </>
+        </Route>   */}
+      </Switch> 
+    </Router>
   );
-}
+}}
 
 export default App;
