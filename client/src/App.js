@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-// import ConcertHomePage from "./Components/ConcertHomePage";
+import ConcertHomePage from "./Components/ConcertHomePage";
 import Navbar from "./Components/Navbar";
-// import Comments from "./Components/Comments";
+import Comments from "./Components/Comments";
 import Login from "./Components/Login";
 import Signup from "./Components/Signup";
+// import Search from "./Components/Search";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -35,15 +36,16 @@ function App() {
     <Router>
       <Navbar user={user} setUser={setUser} />
       <Switch>
-      <Route exact path="/">
+      {/* <Route exact path="/">
           <Login onLogin={setUser} />
-        </Route>
-         {/* <Route exact path="/concerts">
+        </Route> */}
+         <Route exact path="/">
+         {/* <Search />  */}
           <ConcertHomePage />
         </Route>
         <Route exact path="/concerts/:id">
           <Comments />
-        </Route>   */}
+        </Route>  
       </Switch> 
     </Router>
   );
