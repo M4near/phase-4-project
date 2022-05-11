@@ -6,12 +6,13 @@ class ConcertsController < ApplicationController
 
     def show
         concert = findConcert
-        render json: concert
+        render json: concert, serializer: ConcertWithCommentsSerializer
     end
 
- private
-def findConcert
-    concert.find_by(id: params[:id])
-end
+private
+
+    def findConcert
+        Concert.find(params[:id])
+    end
 
 end

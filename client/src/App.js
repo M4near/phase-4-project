@@ -2,10 +2,13 @@ import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import ConcertHomePage from "./Components/ConcertHomePage";
 import Navbar from "./Components/Navbar";
-import Comments from "./Components/Comments";
+// import Comments from "./Components/Comments";
 import Login from "./Components/Login";
 import Signup from "./Components/Signup";
+// import ConcertCard from "./Components/ConcertCard";
+// import ConcertList from "./Components/ConcertList";
 import './App.css';
+import Concert from "./Components/Concert";
 
 
 function App() {
@@ -20,6 +23,7 @@ function App() {
     });
   }, []);
 
+    
   if (!user) 
     return (
       <Router>
@@ -41,12 +45,12 @@ function App() {
       {/* <Route exact path="/">
           <Login onLogin={setUser} />
         </Route> */}
-         <Route exact path="/">
+         <Route exact path="/concerts">
          {/* <Search />  */}
           <ConcertHomePage />
         </Route>
         <Route exact path="/concerts/:id">
-          <Comments />
+          <Concert />
         </Route>  
       </Switch> 
     </Router>

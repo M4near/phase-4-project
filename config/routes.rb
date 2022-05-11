@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   
-  resources :comments
-  resources :concerts
-  resources :users
+  resources :comments, only: [:index, :create, :show, :destroy]
+  resources :concerts, only: [:index, :show]
+  resources :users, only: [:index, :create, :show]
   
   post "/login", to: "sessions#create"
   post "/signup", to: "users#create"
