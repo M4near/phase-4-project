@@ -33,7 +33,11 @@ function Signup({ onLogin }) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    
+    <div class="sign-up-form">
+      <h2 class="signup-label">If you do not have an account with us, please sign up below</h2>
+      <h1 class="signup-label"> Sign-Up Here:</h1>
+    <form  onSubmit={handleSubmit}>
       <formField>
         <label htmlFor="username">Username</label>
         <input
@@ -65,7 +69,7 @@ function Signup({ onLogin }) {
         />
       </formField>
       <formField>
-        <button type="submit">{isLoading ? "Loading..." : "Sign Up"}</button>
+        <button class="btn btn-primary btn-block btn-large" type="submit">{isLoading ? "Loading..." : "Sign Up"}</button>
       </formField>
       <formField>
         {errors.map((err) => (
@@ -73,6 +77,8 @@ function Signup({ onLogin }) {
         ))}
       </formField>
     </form>
+    <div class="btm-space"></div>
+    </div>
   );
 }
 

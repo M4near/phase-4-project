@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 // import { Button, Error, Input, FormField, Label } from "../styles";
 
+
 function Login({ onLogin }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -27,6 +28,8 @@ function Login({ onLogin }) {
   }
 
   return (
+    <div class="login-bg">
+      <h1 class="login-label"> Log In:</h1>
     <form onSubmit={handleSubmit}>
       <formField>
         <label htmlFor="username">Username</label>
@@ -49,7 +52,7 @@ function Login({ onLogin }) {
         />
       </formField>
       <formField>
-        <button variant="fill" color="primary" type="submit">
+        <button class="btn btn-primary btn-block btn-large" variant="fill" color="primary" type="submit">
           {isLoading ? "Loading..." : "Login"}
         </button>
       </formField>
@@ -59,6 +62,9 @@ function Login({ onLogin }) {
         ))}
       </formField>
     </form>
+   
+    </div>
+    
   );
 }
 

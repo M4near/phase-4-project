@@ -5,7 +5,8 @@ import Navbar from "./Components/Navbar";
 import Comments from "./Components/Comments";
 import Login from "./Components/Login";
 import Signup from "./Components/Signup";
-// import Search from "./Components/Search";
+import './App.css';
+
 
 function App() {
   const [user, setUser] = useState(null);
@@ -33,6 +34,7 @@ function App() {
   ); else {
 
   return (
+
     <Router>
       <Navbar user={user} setUser={setUser} />
       <Switch>
