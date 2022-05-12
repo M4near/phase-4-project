@@ -21,6 +21,7 @@ function Navbar({user, setUser}) {
   return (
     <header>
       <div class="logo">
+
         <h1 class="logo-name">The House of Flatiron</h1>
         <h2 class="logo-sub">"Can You Feel The Beat"</h2>
       </div>
