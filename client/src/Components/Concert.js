@@ -31,11 +31,11 @@ function Concert() {
   return (
     <section className="container">
       <div className="card">
-            <img src={concert.image} alt={concert.name} />
+            <img class="card-image" src={concert.image} alt={concert.name} />
             <h2>
               {concert.name} featuring {concert.band_name}
             </h2>
-          <div>
+          <div class="concert-card">
             <p>Date: {concert.date}</p>
             <p>Time: {concert.time}</p>
             <p>Genre: {concert.genre}</p>

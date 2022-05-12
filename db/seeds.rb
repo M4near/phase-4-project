@@ -42,7 +42,7 @@ Concert.create([
     genre: "Pop",
     date: "12/24/22",
     time: "7:00 PM",
-    image: "https://media.gq.com/photos/56bcb218cdf2db6945d2ef93/4:3/w_2000,h_1500,c_limit/bieber-coverstory-square.jpg"
+    image: "https://drive.google.com/file/d/14antK4mfJjv50ha8d2qt6fG4hewDNK0R/view?usp=sharing"
   },
   {
     name: "Rock And Roll You All Nite",

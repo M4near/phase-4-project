@@ -21,7 +21,7 @@ html { width: 100%;
 
 body { 
   padding-top: 0px;
-  overflow: scroll;
+  overflow: hidden scroll;
   width: 100%;
   height:100%;
   font-family: 'Open Sans', sans-serif;
@@ -75,21 +75,35 @@ div#root {
   font-weight: 200;
 }
 
-.nav-bar { 
-  height: 50px;
-  background-color: #adda32;
+.nav-bar {
+  height: 100px;
+  background-color: #2a1c24;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(12px + 2vmin);
-  color: white;
   display: block;
   justify-content: space-between;
   width: 100%;
+  text-align: center;
 }
 
-.nav-links{
-  
+.nav-line{
+  overflow: hidden;
+  margin: 0px;
+}
+
+.nav-line li a{
+  color: #fff;
+}
+
+
+.nav-line li{
+    margin-top: 0px;
+    margin: 0px;
+    display: inline-block;
+    text-align: center;
+    padding: 25px;
 }
 /* End of Log in Page CSS */
 
@@ -160,3 +174,12 @@ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgb
 }
 
 /* end */
+
+
+.card{
+  width: 300px;
+}
+
+.card-image{
+  height: 300px;
+}
