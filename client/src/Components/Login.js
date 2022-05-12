@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-// import { Button, Error, Input, FormField, Label } from "../styles";
-
 
 function Login({ onLogin }) {
   const [username, setUsername] = useState("");

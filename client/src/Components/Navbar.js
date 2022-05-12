@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 
-
 function Navbar({user, setUser}) {
   function handleLogout() {
     fetch("/logout",{
@@ -22,24 +21,22 @@ function Navbar({user, setUser}) {
   return (
     <header>
       <div class="logo">
-        <h1 class="logo-name">House of Flatiron</h1>
-        <h5 class="logo-sub">"Can You Feel The Beat"</h5>
+
+        <h1 class="logo-name">The House of Flatiron</h1>
+        <h2 class="logo-sub">"Can You Feel The Beat"</h2>
       </div>
       <nav class="nav-bar">
-        <ul class="nav-line">
-          <li class="li"><Link to="/">Home</Link></li>
-          <li><Link to="/">Comments</Link></li>
-          <li><Link to="/concerts">Concerts</Link></li>
-          {/* <h1 onClick={handleLogout}>Logout</h1> */}
-          <li><button onClick={handleLogout}>Logout</button></li>
-        </ul>
-        <div class="Welcome"> 
-          {/* <h3>Welcome To House of Flatiron. Click On Our Concerts Link To See Our Upcoming Events. 
-          Feel Free To Leave Comments About Different Events You May Up Attending, Or Even Wished You Could Attend.</h3> */}
-        </div>
-
+        <h4 onClick={handleLogout}>Logout</h4>
+        <Link to="/">Home</Link>
+        <Link to="/concerts">Concerts</Link>
+        <Link to="/comments">Comments</Link>
       </nav>
-      
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </header>
 
   );
