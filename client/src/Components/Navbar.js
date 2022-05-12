@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 
-
 function Navbar({user, setUser}) {
   function handleLogout() {
     fetch("/logout",{
@@ -22,17 +21,21 @@ function Navbar({user, setUser}) {
   return (
     <header>
       <div class="logo">
-        <h1 class="logo-name">House of Flatiron</h1>
+        <h1 class="logo-name">The House of Flatiron</h1>
         <h2 class="logo-sub">"Can You Feel The Beat"</h2>
       </div>
       <nav class="nav-bar">
-        <h1 onClick={handleLogout}>Logout</h1>
+        <h4 onClick={handleLogout}>Logout</h4>
         <Link to="/">Home</Link>
-        <Link to="/">Comments</Link>
-        <Link to="/">Concerts</Link>
-        <button onClick={handleLogout}>Logout</button>
+        <Link to="/concerts">Concerts</Link>
+        <Link to="/comments">Comments</Link>
       </nav>
-      
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </header>
 
   );
