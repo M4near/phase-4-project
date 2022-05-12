@@ -1,16 +1,17 @@
 class CommentsController < ApplicationController
+
     def index
         render json: Comment.all
     end
 
     def create
         comment = Comment.create!(comment_params)
-        render json: Comment, status: :created
+        render json: comment, status: :created
     end
 
     def show
         comment = comment_find
-        render json: Comment
+        render json: comment
     end
 
     def destroy 

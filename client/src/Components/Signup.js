@@ -33,7 +33,7 @@ function Signup({ onLogin }) {
   }
 
   return (
-    
+  
     <div class="sign-up-form">
       <h2 class="signup-label">If you do not have an account with us, please sign up below</h2>
       <h1 class="signup-label"> Sign-Up Here:</h1>
