@@ -30,18 +30,18 @@ function Concert() {
 
   return (
     <section className="container">
-      <div className="card">
+      <div class="con-card-single">
+
             <img class="card-image" src={concert.image} alt={concert.name} />
-            <h2>
-              {concert.name} featuring {concert.band_name}
-            </h2>
-          <div class="concert-card">
+            <h2 class="title-single">{concert.name} featuring {concert.band_name} </h2>
+            
+          <div class="con-single">
             <p>Date: {concert.date}</p>
             <p>Time: {concert.time}</p>
             <p>Genre: {concert.genre}</p>
-            </div>
-           
           </div>
+           
+        </div>
     </section>
   );
 }

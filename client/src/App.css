@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Kaushan+Script&family=Macondo&family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Gloria+Hallelujah&family=Kaushan+Script&family=Macondo&family=Merienda&family=Rubik+Glitch&display=swap');
 
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
@@ -76,7 +76,7 @@ div#root {
 }
 
 .nav-bar {
-  height: 100px;
+  height: 75px;
   background-color: #2a1c24;
   flex-direction: column;
   align-items: center;
@@ -88,23 +88,28 @@ div#root {
   text-align: center;
 }
 
-.nav-line{
+.nav-bar a{
+  color: rgb(242, 168, 168);
+  font-size:larger;
+  font-family: 'Electrolize', sans-serif;
+  
+}
+
+/* .nav-line{
   overflow: hidden;
   margin: 0px;
-}
-
-.nav-line li a{
-  color: #fff;
-}
+} */
 
 
-.nav-line li{
+
+
+/* .nav-line li{
     margin-top: 0px;
     margin: 0px;
     display: inline-block;
     text-align: center;
     padding: 25px;
-}
+} */
 /* End of Log in Page CSS */
 
 .login { 
@@ -182,4 +187,161 @@ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgb
 
 .card-image{
   height: 300px;
+}
+
+.searchbar {
+  text-align: right;
+  font-size: 12px;
+  margin-right: 20px;
+  color: #fff;
+  font-family: 'Merienda', cursive;
+
+}
+
+.search-box {
+  width: 255px;
+  height: 110px;
+  margin-bottom: 0px;
+  margin-right: 20px;
+  margin-left: 87%;
+}
+
+.con-card{
+  margin-bottom: 50px;
+  border: inset;
+  border-width: 10px;
+  width: fit-content;
+  margin-right: 30px;
+  margin-left: 50px;
+  
+}
+
+section.container {
+  display: inline-block;
+}
+
+.title{ 
+  width: 500px;
+  text-align: center;
+  padding: 10px;
+  color: rgb(242, 168, 168);
+  text-decoration: underline;
+}
+
+.con{
+  margin-bottom: 10px;
+  text-align: center;
+  color: rgb(242, 168, 168);
+  
+}
+
+.con-card-single{
+  margin-bottom: 50px;
+  border: inset;
+  border-width: 10px;
+  width: fit-content;
+  margin-right: 30px;
+  margin-left: 50px;
+}
+
+.title-single{
+  width: 500px;
+  text-align: center;
+  padding: 10px;
+  color: rgb(242, 168, 168);
+  text-decoration: underline;
+}
+
+.con-single{
+  margin-bottom: 10px;
+  text-align: center;
+  color: rgb(242, 168, 168);
+}
+
+.img-single{
+  /* background-size: cover;
+  background-position: center 56%; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/* <!-- HTML !-->
+<button class="button-85" role="button">Button 85</button> */
+
+/* CSS */
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+
+.card-image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
