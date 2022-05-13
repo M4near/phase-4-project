@@ -26,17 +26,11 @@ function Navbar({user, setUser}) {
         <h2 class="logo-sub">"Can You Feel The Beat"</h2>
       </div>
       <nav class="nav-bar">
-        <h4 onClick={handleLogout}>Logout</h4>
         <Link to="/">Home</Link>
         <Link to="/concerts">Concerts</Link>
         <Link to="/comments">Comments</Link>
+        <Link to="/" onClick={handleLogout}>Logout</Link>
       </nav>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </header>
 
   );

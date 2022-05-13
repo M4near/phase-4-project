@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function CommentsCard({key, concert, content, rating, username, concert_id, comment, deleteComment}) {
+function CommentsCard({id, concert, content, rating, username, concert_id, comment, deleteComment}) {
    
     return (
       <>
       {/* <Navbar /> */}
       <section className="container">
         
-          <div key={key} className="card">
+          <div key={id} className="card">
             <h2>
               {username}
             </h2>
@@ -18,7 +18,8 @@ function CommentsCard({key, concert, content, rating, username, concert_id, comm
             <p>Comment: {content}</p>
             
             </div>
-           <button onClick={() => deleteComment(comment.id)}>Delete Comment</button>
+           <button onClick={() => deleteComment(id)}>Delete Comment</button>
+           <Link to={`/comments/${id}/edit`}><button>Edit Comment</button></Link>
           </div>
       </section>
       </>

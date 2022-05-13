@@ -10,7 +10,7 @@ function ConcertCard({key, id, band_name, name, image, date, time, genre}) {
       <section className="container">
         
           <div key={key} className="card">
-            <img src={image} alt={name} />
+            <img src={image} alt={name} className="card-image" />
             <h2>
               {name} featuring {band_name}
             </h2>
@@ -20,6 +20,9 @@ function ConcertCard({key, id, band_name, name, image, date, time, genre}) {
             <p>Genre: {genre}</p>
             </div>
            <Link to={`/concerts/${id}`}><button>See More</button></Link>
+          </div>
+          <div>
+          <Link to={`/comments`}><button>Comment</button></Link>
           </div>
       </section>
       </>
