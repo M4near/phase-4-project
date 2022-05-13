@@ -6,20 +6,26 @@ function CommentsCard({id, concert, content, rating, username, concert_id, comme
     return (
       <>
       {/* <Navbar /> */}
-      <section className="container">
+      <section className="container-con">
         
           <div key={id} className="card">
-            <h2>
-              {username}
-            </h2>
-          <div>
-          <p>Concert: {concert}</p>
-          <p>Excitement Level: {rating}</p>
-            <p>Comment: {content}</p>
-            
-            </div>
-           <button onClick={() => deleteComment(id)}>Delete Comment</button>
-           <Link to={`/comments/${id}/edit`}><button>Edit Comment</button></Link>
+            <h2 class="card-head"> {username} </h2>
+              
+            <p class="card-sub">Concert: </p>
+            <h3 class="card-stuff"> {concert} </h3>
+
+            <p class="card-sub">Excitement Level: </p>
+              <h3 class="card-stuff">{rating}</h3>
+
+            <p class="card-sub"> Comment: </p>
+              <h3 class="card-stuff">{content}</h3>
+
+          </div> 
+
+          <div class="com-card-btn-con">
+           <button class="com-card-btn" onClick={() => deleteComment(id)}>Delete Comment</button>
+           <br></br>
+           <Link to={`/comments/${id}/edit`}><button class="com-card-btn" >Edit Comment</button></Link>
           </div>
       </section>
       </>

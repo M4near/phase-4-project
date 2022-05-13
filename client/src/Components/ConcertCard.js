@@ -15,12 +15,11 @@ function ConcertCard({key, id, band_name, name, image, date, time, genre}) {
                     <p>Date: {date}</p>
                     <p>Time: {time}</p>
                     <p>Genre: {genre}</p>
-                    <Link to={`/concerts/${id}`}><button class="button-85">See More</button></Link>
+                    <Link to={`/concerts/${id}`}><button class="button-85">See More</button></Link><br></br>
+                    <Link to={`/comments`}><button button class="button-85">Comment</button></Link>
                   </div>
           </div>
-          <div>
-          <Link to={`/comments`}><button>Comment</button></Link>
-          </div>
+         
       </section>
       </>
     );
