@@ -4,7 +4,7 @@ function Search({ setQuery }) {
  
   return (
     <div className="searchbar">
-      <h2> Find concerts by genre</h2>
+      <h2> Find concerts by genre:</h2>
       <div class="search-box">
       <input
         className="fas"
