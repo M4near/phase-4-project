@@ -9,17 +9,16 @@ function ConcertCard({key, id, band_name, name, image, date, time, genre}) {
       {/* <Navbar /> */}
       <section className="container">
         
-          <div key={key} className="card">
-            <img src={image} alt={name} />
-            <h2>
-              {name} featuring {band_name}
-            </h2>
-          <div>
-            <p>Date: {date}</p>
-            <p>Time: {time}</p>
-            <p>Genre: {genre}</p>
-            </div>
-           <Link to={`/concerts/${id}`}><button>See More</button></Link>
+          <div key={key} class="con-card">
+            <img class="img-single" src={image} alt={name} />
+            <h2 class="title">{name} featuring {band_name}</h2>
+                  <div class="con">
+                    <p>Date: {date}</p>
+                    <p>Time: {time}</p>
+                    <p>Genre: {genre}</p>
+                    <Link to={`/concerts/${id}`}><button class="button-85">See More</button></Link>
+                  </div>
+
           </div>
       </section>
       </>
