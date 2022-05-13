@@ -29,7 +29,7 @@ function Concert() {
   if (status === "rejected") return <h1>Error: {error.error}</h1>;
 
   return (
-    <section className="container">
+    <section className="container-single">
       <div class="con-card-single">
 
             <img class="card-image" src={concert.image} alt={concert.name} />
