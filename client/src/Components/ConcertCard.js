@@ -8,7 +8,6 @@ function ConcertCard({key, id, band_name, name, image, date, time, genre}) {
       <>
       {/* <Navbar /> */}
       <section className="container">
-        
           <div key={key} class="con-card">
             <img class="img-single" src={image} alt={name} />
             <h2 class="title">{name} featuring {band_name}</h2>
@@ -18,7 +17,9 @@ function ConcertCard({key, id, band_name, name, image, date, time, genre}) {
                     <p>Genre: {genre}</p>
                     <Link to={`/concerts/${id}`}><button class="button-85">See More</button></Link>
                   </div>
-
+          </div>
+          <div>
+          <Link to={`/comments`}><button>Comment</button></Link>
           </div>
       </section>
       </>
