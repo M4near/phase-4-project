@@ -42,7 +42,7 @@ Concert.create([
     genre: "Pop",
     date: "12/24/22",
     time: "7:00 PM",
-    image: "https://drive.google.com/file/d/14antK4mfJjv50ha8d2qt6fG4hewDNK0R/view?usp=sharing"
+    image: "/concertpix/1.jpg"
   },
   {
     name: "Rock And Roll You All Nite",
@@ -50,7 +50,7 @@ Concert.create([
     genre: "Rock",
     date: "1/1/23",
     time: "12:30 AM",
-    image: "https://wallpaperaccess.com/full/1658010.jpg"
+    image: "/concertpix/2.jpg"
   },
   {
     name: "Let's Get It On!",
@@ -58,7 +58,7 @@ Concert.create([
     genre: "R&B",
     date: "10/14/22",
     time: "9:00 PM",
-    image: "https://wallpapercave.com/wp/wp4136227.jpg"
+    image: "/concertpix/3.jpg"
   },
   {
     name: "Friends and Heroes! `Merica!",
@@ -66,7 +66,7 @@ Concert.create([
     genre: "Country",
     date: "7/4/22",
     time: "4:00 PM",
-    image: "https://images7.alphacoders.com/575/thumb-1920-575392.jpg"
+    image: "/concertpix/4.jpg"
   },
   {
     name: "Spaghetti On My Sweater Tour",
@@ -74,7 +74,7 @@ Concert.create([
     genre: "Rap",
     date: "12/24/22",
     time: "2:00 AM",
-    image: "https://i.ytimg.com/vi/mdREwJPQ6k0/maxresdefault.jpg"
+    image: "/concertpix/5.jpg"
   },
   {
     name: "Eat It, Amish Paradise!",
@@ -82,7 +82,7 @@ Concert.create([
     genre: "Parody",
     date: "6/4/22",
     time: "8:00 PM",
-    image: "https://images.fanart.tv/fanart/yankovic-weird-al-4ff2dad4c8284.jpg"
+    image: "/concertpix/6.jpg"
   },
   {
     name: "Malibu's Least Wanted",
@@ -90,7 +90,7 @@ Concert.create([
     genre: "Parody",
     date: "2/14/22",
     time: "2:00 PM",
-    image: "https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2021/02/Malibus-Most-Wanted.jpg"
+    image: "/concertpix/7.jpg"
   },
   {
     name: "The Old Town Road To Montero",
@@ -98,7 +98,7 @@ Concert.create([
     genre: "Country",
     date: "5/24/22",
     time: "11:00 PM",
-    image: "https://www.rollingstone.com/wp-content/uploads/2021/03/lil-nas-x-montero-satanists2.jpg?resize=1800,1200&w=1800"
+    image: "/concertpix/8.jpg"
   },
   {
     name: "Wahoo And Puhlease",
@@ -106,7 +106,7 @@ Concert.create([
     genre: "Rap",
     date: "8/20/22",
     time: "7:00 PM",
-    image: "https://www.essence.com/wp-content/uploads/2020/12/cardi-tries-Cropped-1-1920x1080.png"
+    image: "/concertpix/9.jpg"
   },
   {
     name: "Speak Now For The Fearless, Red, 1989 Reputation World Tour",
@@ -114,7 +114,7 @@ Concert.create([
     genre: "Country",
     date: "11/24/22",
     time: "5:00 PM",
-    image: "https://wallpaper.dog/large/10769137.jpg"
+    image: "/concertpix/10.jpg"
   }
 ])
 
