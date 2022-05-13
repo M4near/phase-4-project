@@ -50,15 +50,16 @@ function NewCommentForm({addComment, setCommentData}) {
 
     return (
         <>
-      <h1 className="new-trip-form-title">New Comment</h1>
+      <h1 class="new-trip-form-title">Let Us Know How You Feel:</h1>
       <form
         onSubmit={handleSubmit}
         className="editForm"
       >
         <fieldset className="newCommentFieldset">
-            <label className="" htmlFor="concert_id">
+            <label class="form-label" htmlFor="concert_id">
             Concert:
             </label>
+            <br></br>
             <select
             type="dropdown"
             className="dropdown"
@@ -78,12 +79,14 @@ function NewCommentForm({addComment, setCommentData}) {
             <option value= "9">Wahoo And Puhlease</option>
             <option value= "10">Speak Now For The Fearless, Red, 1989 Reputation World Tour</option>
             </select>
+            
         </fieldset>
-
+        <div>
         <fieldset className="newCommentFieldset">
-          <label className="" htmlFor="rating">
+          <label class="form-label" htmlFor="rating">
             Rating:
           </label>
+          <br></br>
           <select
             type="dropdown"
             className="dropdown"
@@ -101,7 +104,7 @@ function NewCommentForm({addComment, setCommentData}) {
         </fieldset>
 
         <fieldset className="newCommentFieldset">
-          <label className="" htmlFor="content">
+          <label class="form-label" htmlFor="content">
             Comment:
           </label>
           <input
@@ -112,14 +115,16 @@ function NewCommentForm({addComment, setCommentData}) {
             value={content}
             onChange={(e) => setContent(e.target.value)}
           />
+          
         </fieldset>
 
         <button
-          className=""
+          class="com-btn"
           type="submit"
         >
           Submit Comment & Rating
         </button>
+        </div>
       </form>
     </>
   );

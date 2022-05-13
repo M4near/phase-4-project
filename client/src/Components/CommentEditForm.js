@@ -26,7 +26,7 @@ function CommentEditForm({ comment = {}, updateComment }) {
 
   return (
     <>
-    <h1 className="new-trip-form-title">Edit Comment</h1>
+    <h1 className="new-trip-form-title">Ain't Feeling The Same? Change Your Comment Below:</h1>
       <form
         onSubmit={handleSubmit}
         className="editForm"
@@ -56,10 +56,11 @@ function CommentEditForm({ comment = {}, updateComment }) {
             </select>
         </fieldset>
 
-        <fieldset className="newCommentFieldset">
+        <fieldset class="newCommentFieldset">
           <label className="" htmlFor="rating">
             Rating:
           </label>
+          
           <select
             type="dropdown"
             className="dropdown"
@@ -91,7 +92,7 @@ function CommentEditForm({ comment = {}, updateComment }) {
         </fieldset>
 
         <button
-          className=""
+          class="com-btn"
           type="submit"
         >
           Update
