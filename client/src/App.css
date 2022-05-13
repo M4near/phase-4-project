@@ -194,7 +194,7 @@ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgb
 
 .searchbar {
   padding-top: 30px;
-  margin-left: 50px;
+  margin-left: 90px;
   font-size: 16px;
   margin-right: 20px;
   color: #fff;
@@ -461,4 +461,5 @@ word-spacing: 2px;
 .card-stuff{
   margin: 4px;
   color: #ec8f80;
+  margin-bottom: 8px;
 }
